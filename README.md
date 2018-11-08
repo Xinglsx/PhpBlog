@@ -44,3 +44,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password
 
 FLUSH PRIVILEGES; #刷新权限 
 
+
+将User.php文件移动到了新的Model文件夹下的时候，需要同时将User类的namespace修改为App\Model。然后，需要执行
+
+composer dumpautoload
